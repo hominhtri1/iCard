@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.icard">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/new_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+        <activity android:name=".Exchange.ReadCard.ReadCardPreviewActivity"></activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Collection.OtherCard.OtherCardInfoActivity"
+            android:parentActivityName=".Collection.OtherCard.OtherCardListActivity" />
+        <activity
+            android:name=".Collection.MyCard.MyCardInfoActivity"
+            android:parentActivityName=".Collection.MyCard.MyCardListActivity" />
+        <activity
+            android:name=".Collection.OtherCard.OtherCardListActivity"
+            android:parentActivityName=".Collection.CollectionActivity" />
+        <activity
+            android:name=".Exchange.ShowCard.ShowCardListActivity"
+            android:parentActivityName=".Exchange.ExchangeActivity" />
+        <activity
+            android:name=".Collection.MyCard.MyCardListActivity"
+            android:parentActivityName=".Collection.CollectionActivity" />
+        <activity
+            android:name=".Exchange.ReadCard.ReadCardActivity"
+            android:parentActivityName=".Exchange.ExchangeActivity" />
+        <activity
+            android:name=".Exchange.ShowCard.ShowCardActivity"
+            android:parentActivityName=".Exchange.ShowCard.ShowCardListActivity" />
+        <activity
+            android:name=".Exchange.ExchangeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Collection.MyCard.MyCardActivity"
+            android:parentActivityName=".Collection.MyCard.MyCardListActivity" />
+        <activity
+            android:name=".Collection.CollectionActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

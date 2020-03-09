@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+
+        <Button
+            android:id="@+id/exchange_menu_read_QR_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Read QR"
+            android:textSize="50sp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/menu_button_drawable"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+
+        <Button
+            android:id="@+id/exchange_menu_read_card_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Read card"
+            android:textSize="50sp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/menu_button_drawable"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+
+        <Button
+            android:id="@+id/exchange_menu_show_card_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Show card"
+            android:textSize="50sp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/menu_button_drawable"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+
+</LinearLayout>
